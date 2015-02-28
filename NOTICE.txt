@@ -1,0 +1,12 @@
+Simulation Manager for VecNet
+https://github.com/vecnet/simulation-manager
+
+Copyright 2014-2015 University of Notre Dame
+
+Contributors:
+  Alexander Vyushkov, Center for Research Computing, University of Notre Dame
+  Jimm Domingo, Center for Research Computing, University of Notre Dame
+
+This project is licensed under the Mozilla Public License, version 2.0 (the
+"License"). A copy of the License is in the project file "LICENSE.md",
+and is also available at http://mozilla.org/MPL/2.0/.
