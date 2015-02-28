@@ -1,0 +1,5 @@
+# The secrets module and its compiled version
+secrets.py*
+
+# Settings that are custom to the local system
+local.py

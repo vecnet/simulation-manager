@@ -1,0 +1,14 @@
+{
+    "id": 300,
+    "model_version": "1.6",
+    "scenario":
+    {
+        "id": 808,
+        "model": "EMOD",
+        "input_files":
+        {
+            "config": "path/to/config.json",
+            "campaign": "path/to/campaign.json"
+        }
+    }
+}
