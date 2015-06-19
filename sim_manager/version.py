@@ -1,1 +1,1 @@
-VERSION = '2.1'  # Public version per PEP 440
+VERSION = '2.2a'  # Public version per PEP 440
