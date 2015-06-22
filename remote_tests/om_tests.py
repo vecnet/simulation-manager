@@ -22,8 +22,8 @@ class OpenMalariaTests(unittest.TestCase):
     Tests with OpenMalaria simulations
     """
     def test_1_simulation(self):
-        simulation = Simulation(model=sim_model.OPEN_MALARIA, model_version='30', id_on_client='9876')
-        scenario_url = 'http://openmalaria.googlecode.com/svn/application_deployment/examples/scenarioVecMonthly.xml'
+        simulation = Simulation(model=sim_model.OPEN_MALARIA, model_version='32', id_on_client='9876')
+        scenario_url = 'https://raw.githubusercontent.com/vecnet/vecnet.openmalaria/master/vecnet/openmalaria/tests/input/scenario70k60c.xml'
         simulation.input_files['scenario.xml'] = scenario_url
         sim_group = SimulationGroup(simulations=[simulation])
         execution_request = ExecutionRequest(simulation_group=sim_group)

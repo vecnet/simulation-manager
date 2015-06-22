@@ -101,6 +101,7 @@ if RUNNING_MANAGE_PY:
     PYTHON_FOR_SCRIPTS = sys.executable
 else:
     host_python_executables = {
+        'localhost': 'C:\\Python27',
         'vecnet02': '/opt/sim_manager/venv/vecnet02/bin/python',
         'vecnet1': '/shared/sim_manager/venv/vecnet1/bin/python',
     }
