@@ -103,7 +103,7 @@ def stage_output_files(output_filenames, simulation):
 
     output_data = dict(id_on_client=simulation.id_on_client, output_files=output_files)
     post_body = json.dumps(output_data)
-    resp = requests.post(output_url, data=post_body)
+    resp = requests.post(output_url, post_body, headers={'content-type':'application/json'})
     resp.raise_for_status()  # Raises a requests.exceptions.HTTPError if one occurred
 
 
