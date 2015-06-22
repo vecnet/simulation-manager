@@ -3,3 +3,5 @@ secrets.py*
 
 # Settings that are custom to the local system
 local.py
+
+conf_local.py
