@@ -13,6 +13,7 @@ import socket
 
 import batch
 from models import Mock, openmalaria
+from sim_manager.scripts.models import emod
 
 
 hostname = socket.gethostname().split('.')[0]
@@ -37,18 +38,17 @@ if hostname in ('vecnet1', 'vecnet2', 'vecnet3', 'vecnet4'):  # JCU cluster
     ]
     BATCH_SYSTEM = batch.PBS
 
-
 """
-# Example of conf_local.py file
+# Example of conf_local2.py file
 from models import Mock, openmalaria
 MODELS = [
    openmalaria.SimulationModel('32', 'D:\\bin\\OM\\32\\openMalaria')
 ]
 """
 
-try:
-    from .conf_local import MODELS as LOCAL_MODELS
-    MODELS += LOCAL_MODELS
-except ImportError:
-    LOCAL_MODELS = []  # To satisfy PyCharm code inspector
-    pass
+# try:
+#     from .conf_local import MODELS as LOCAL_MODELS
+#     MODELS += LOCAL_MODELS
+# except ImportError:
+#     LOCAL_MODELS = []  # To satisfy PyCharm code inspector
+#     pass
